@@ -1,11 +1,10 @@
-import React from "react"
+import React from "react";
+import { MainContainer } from "../components/MainContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        test
-      </header>
+      <MainContainer>Main</MainContainer>
     </div>
   );
 }
