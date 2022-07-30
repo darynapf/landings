@@ -1,12 +1,8 @@
 import React from "react";
-import { MainContainer } from "../components/MainContainer";
+import { BubbleLayout } from "../layouts/BubbleLayout";
 
 function App() {
-  return (
-    <div className="App">
-      <MainContainer>Main</MainContainer>
-    </div>
-  );
+  return <BubbleLayout />;
 }
 
 export default App;

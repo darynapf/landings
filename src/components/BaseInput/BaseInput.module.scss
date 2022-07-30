@@ -1,0 +1,45 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  @supports not (gap: 10px) {
+    & > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    color: rgb(var(--bubble-grey));
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: capitalize;
+  }
+
+  &__control {
+    min-height: 40px;
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid rgb(var(--bubble-light-grey));
+    border-radius: 5px;
+    text-transform: capitalize;
+    background: rgb(var(--white));
+    transition: background 0.2s, border 0.2s;
+
+    &:hover {
+      background: rgb(var(--bubble-light-grey));
+    }
+
+    &:focus {
+      border: 1px solid rgb(var(--bubble-primary));
+      background: rgb(var(--white));
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
