@@ -1,0 +1,27 @@
+.decor {
+  position: absolute;
+
+  &_wave {
+    max-height: 70px;
+    top: 10%;
+    left: 15%;
+  }
+
+  &_circleRing {
+    max-height: 120px;
+    right: 15%;
+    top: 5%;
+  }
+
+  &_cube {
+    max-height: 90px;
+    bottom: 20%;
+    right: 0;
+  }
+
+  &_circleDot {
+    max-height: 150px;
+    bottom: 4%;
+    left: 4%;
+  }
+}

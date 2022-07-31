@@ -1,13 +1,9 @@
 .background {
   position: relative;
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(
-    118.59deg,
-    rgb(var(--white) / 0) 0%,
-    rgb(var(--bubble-secondary)) 100%
-  );
+  width: 100%;
+  min-height: 900px;
+  background-color: rgb(var(--bubble-secondary));
 
   &::before {
     position: absolute;
@@ -35,6 +31,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 40px;
   font-family: "Open Sans", sans-serif;
 
@@ -45,6 +42,7 @@
   }
 
   &__title {
+    z-index: 100;
     font-weight: 300;
     font-size: 48px;
     line-height: 65px;
@@ -63,6 +61,14 @@
         margin-right: 15px;
       }
     }
+  }
+
+  &__background {
+    position: absolute;
+    z-index: 5;
+    max-height: 240px;
+    left: 25%;
+    top: -5%;
   }
 
   .content__text {

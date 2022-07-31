@@ -10,4 +10,10 @@
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.01em;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 16px rgb(var(--bubble-accent));
+  }
 }
