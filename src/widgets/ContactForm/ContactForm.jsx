@@ -22,6 +22,10 @@ const ContactForm = (props) => {
       <div className={styles.form__container}>
         <div className={styles.form__title}>{props.title}</div>
         <div className={styles.form__inputs}>{inputList}</div>
+        <div className={styles.form__agreement}>
+          By clicking the button you are accepting the terms of the main
+          agreement
+        </div>
         <BaseButton name="send" />
       </div>
     </div>
