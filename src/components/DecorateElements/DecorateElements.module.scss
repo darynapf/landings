@@ -5,23 +5,86 @@
     max-height: 70px;
     top: 10%;
     left: 15%;
+    animation: moveWave 3s alternate-reverse infinite;
   }
 
   &_circleRing {
     max-height: 120px;
     right: 15%;
     top: 5%;
+    animation: moveCircleRing 2s alternate infinite;
   }
 
   &_cube {
     max-height: 90px;
     bottom: 20%;
     right: 0;
+    animation: moveCube 5s alternate infinite;
   }
 
   &_circleDot {
     max-height: 150px;
     bottom: 4%;
     left: 4%;
+    animation: moveCircleDot 7s alternate-reverse infinite;
+    filter: blur(10px);
+  }
+
+  &_circle {
+    max-height: 40px;
+    bottom: 30%;
+    left: 50%;
+    animation: scale 7s alternate infinite;
+    filter: blur(5px);
+  }
+}
+
+@keyframes moveWave {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(45%, 30%);
+  }
+}
+
+@keyframes moveCircleRing {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(22%, 11%);
+  }
+}
+
+@keyframes moveCube {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-60%, 20%);
+  }
+}
+
+@keyframes moveCircleDot {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(10%, 2%);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
   }
 }

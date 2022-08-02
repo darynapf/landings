@@ -1,5 +1,6 @@
 .form {
   position: relative;
+  width: 100%;
 
   &::before {
     position: absolute;
@@ -11,35 +12,6 @@
     transform: translate(-50%, 0);
     box-shadow: 0 2px 50px rgb(var(--bubble-primary));
     content: attr(data-alt);
-  }
-
-  &::after {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    content: "";
-    border: 1px solid
-      linear-gradient(
-        111.88deg,
-        #7d3d16 6.61%,
-        #642806 9.61%,
-        #b46c2a 17.61%,
-        #a75b29 29.61%,
-        #eaad3d 52.61%,
-        #eaaf43 56.61%,
-        #ecb654 60.61%,
-        #eec171 65.61%,
-        #f2d199 71.61%,
-        #f4d9ad 73.61%,
-        #eabc7e 80.61%,
-        #dd9740 89.61%,
-        #9a4721 102.61%,
-        #803916 105.61%
-      );
   }
 
   &__container {

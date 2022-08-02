@@ -3,9 +3,20 @@ import { ReactComponent as Wave } from "../../assets/svg/wave.svg";
 import { ReactComponent as CircleRing } from "../../assets/svg/circleRing.svg";
 import { ReactComponent as Cube } from "../../assets/svg/cube.svg";
 import { ReactComponent as CircleDot } from "../../assets/svg/circleDot.svg";
+import { ReactComponent as Circle } from "../../assets/svg/circle.svg";
+// import { useRef } from "react";
 
-const DecorateElements = (props) => {
-  console.log(props.moveEvent.pageX);
+const DecorateElements = () => {
+  // let waveRef = useRef();
+  // let innerWidth = window.innerWidth / 2;
+  // let innerHeight = window.innerHeight / 2;
+  // let xMousePos = 0;
+  // let yMousePos = 0;
+  // let yScollLastPos = 0;
+
+  // const clamp = (number, max) => {
+  //   return Math.min(Math.max(number, -max), max);
+  // };
 
   return (
     <>
@@ -13,6 +24,7 @@ const DecorateElements = (props) => {
       <CircleRing className={`${styles.decor} ${styles.decor_circleRing}`} />
       <Cube className={`${styles.decor} ${styles.decor_cube}`} />
       <CircleDot className={`${styles.decor} ${styles.decor_circleDot}`} />
+      <Circle className={`${styles.decor} ${styles.decor_circle}`} />
     </>
   );
 };

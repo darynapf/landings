@@ -11,6 +11,7 @@ const ContactForm = (props) => {
 
   const inputList = contactsInfo.map((e) => (
     <BaseInput
+      type={e.type}
       placeholder={e.placeholder}
       title={e.title}
       value={props.value}
