@@ -4,20 +4,8 @@ import { ReactComponent as CircleRing } from "../../assets/svg/circleRing.svg";
 import { ReactComponent as Cube } from "../../assets/svg/cube.svg";
 import { ReactComponent as CircleDot } from "../../assets/svg/circleDot.svg";
 import { ReactComponent as Circle } from "../../assets/svg/circle.svg";
-// import { useRef } from "react";
 
 const DecorateElements = () => {
-  // let waveRef = useRef();
-  // let innerWidth = window.innerWidth / 2;
-  // let innerHeight = window.innerHeight / 2;
-  // let xMousePos = 0;
-  // let yMousePos = 0;
-  // let yScollLastPos = 0;
-
-  // const clamp = (number, max) => {
-  //   return Math.min(Math.max(number, -max), max);
-  // };
-
   return (
     <>
       <Wave className={`${styles.decor} ${styles.decor_wave}`} />

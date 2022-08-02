@@ -1,11 +1,12 @@
 import styles from "./BubbleLayout.module.scss";
 import React from "react";
+import { Link } from "react-router-dom";
 import { PlayButton } from "../../components/PlayButton";
 import { DecorateElements } from "../../components/DecorateElements";
 import { ContactForm } from "../../widgets/ContactForm";
 import { ReactComponent as Grid } from "../../assets/svg/grid.svg";
 
-const BubbleLayout = () => {
+const BubbleLayout = (props) => {
   return (
     <div className={styles.background}>
       <div className={styles.container}>
@@ -16,7 +17,10 @@ const BubbleLayout = () => {
           </div>
           <Grid className={styles.content__background} />
           <div className={styles.content__buttons}>
-            <PlayButton />
+            <Link to="/night">
+              <PlayButton onClick={props.playButton} />
+            </Link>
+
             <span className={styles.content__text}>Check how it works</span>
           </div>
         </div>
