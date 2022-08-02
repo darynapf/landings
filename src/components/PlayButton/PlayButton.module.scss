@@ -3,25 +3,58 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  position: relative;
-  border-radius: 0.5em;
-  width: 60px;
-  height: 60px;
-  background: rgb(var(--white));
   cursor: pointer;
-  z-index: 100;
+  height: 60px;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 0.5em;
+  background: none;
   transition: transform 0.2s;
 
-  &:hover {
-    transform: scale(1.2);
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    content: "";
+    border-radius: 0.5em;
+    z-index: 1;
+    background: rgb(var(--white));
+    transition: width 0.4s;
+  }
 
-    .playButton__icon {
-      fill: rgb(var(--bubble-primary));
+  &:hover {
+    &::before {
+      width: 100%;
+      content: "";
+    }
+
+    .playButton__box {
+      border-radius: 0.5em 0 0.5em 0;
     }
   }
 
   &:active {
     transform: scale(0.8);
+  }
+
+  &__box {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    z-index: 100;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+    max-width: 75px;
+    color: rgb(var(--black));
+    transition: color 0.2s;
   }
 
   &__icon {

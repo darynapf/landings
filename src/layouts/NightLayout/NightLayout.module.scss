@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
 .background {
   position: relative;
   display: flex;
@@ -5,15 +7,7 @@
   height: 100%;
   padding: 5% 0;
   min-height: 100vh;
-  z-index: 10000;
-
-  &__video {
-    position: absolute;
-    inset: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 1000;
-  }
+  background: center / cover no-repeat url("../../assets/videos/background.gif");
 }
 
 .container {
@@ -59,7 +53,8 @@
     font-weight: 300;
     font-size: 48px;
     line-height: 65px;
-    color: rgb(var(--bubble-accent));
+    font-family: "Gloria Hallelujah", cursive;
+    color: rgb(var(--white));
     max-width: 466px;
     text-transform: capitalize;
 
@@ -86,42 +81,10 @@
       }
     }
   }
-
-  &__background {
-    position: absolute;
-    z-index: 5;
-    max-height: 240px;
-    left: 25%;
-    top: -5%;
-    animation: move infinite alternate 5s;
-
-    @media screen and (max-width: 768px) {
-      display: none;
-      animation: none;
-    }
-  }
-
-  .content__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    max-width: 75px;
-    color: rgb(var(--black));
-  }
 }
 
 .form {
   @media screen and (max-width: 768px) {
     width: 100%;
-  }
-}
-
-@keyframes move {
-  0% {
-    transform: translate(0);
-  }
-
-  100% {
-    transform: translate(10%, 10%);
   }
 }

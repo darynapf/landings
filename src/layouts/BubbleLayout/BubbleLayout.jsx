@@ -18,10 +18,11 @@ const BubbleLayout = (props) => {
           <Grid className={styles.content__background} />
           <div className={styles.content__buttons}>
             <Link to="/night">
-              <PlayButton onClick={props.playButton} />
+              <PlayButton
+                onClick={props.playButton}
+                name="Check how it works"
+              />
             </Link>
-
-            <span className={styles.content__text}>Check how it works</span>
           </div>
         </div>
         <div className={styles.form}>

@@ -19,17 +19,21 @@ const ContactForm = (props) => {
   ));
 
   return (
-    <div className={styles.form}>
+    <form
+      action="https://mailthis.to/daryna.parfeniuk@gmail.com"
+      method="POST"
+      className={styles.form}
+    >
       <div className={styles.form__container}>
-        <div className={styles.form__title}>{props.title}</div>
-        <div className={styles.form__inputs}>{inputList}</div>
-        <div className={styles.form__agreement}>
+        <label className={styles.form__title}>{props.title}</label>
+        <label className={styles.form__inputs}>{inputList}</label>
+        <label className={styles.form__agreement}>
           By clicking the button you are accepting the terms of the main
           agreement
-        </div>
-        <BaseButton name="send" />
+        </label>
+        <BaseButton name="send" type="submit" />
       </div>
-    </div>
+    </form>
   );
 };
 
