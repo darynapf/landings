@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.770c2734.css",
-    "main.js": "/react-gh-pages/static/js/main.a64961b7.js",
+    "main.css": "/react-gh-pages/static/css/main.d195ebcb.css",
+    "main.js": "/react-gh-pages/static/js/main.1eef0206.js",
     "static/js/787.8de91599.chunk.js": "/react-gh-pages/static/js/787.8de91599.chunk.js",
+    "static/media/background.gif": "/react-gh-pages/static/media/background.1086f06432d43831d49d.gif",
+    "static/media/wave.svg": "/react-gh-pages/static/media/wave.d21d9bc2a2a8d734512d196da5cb3f63.svg",
+    "static/media/circleDot.svg": "/react-gh-pages/static/media/circleDot.c935d596bbe7e36bdb3bcaf661d815bd.svg",
+    "static/media/grid.svg": "/react-gh-pages/static/media/grid.8b26465a47ec0b64a316a01462a66a0a.svg",
+    "static/media/circleRing.svg": "/react-gh-pages/static/media/circleRing.684060953d301a5a1e05fb4c4b831a78.svg",
+    "static/media/circle.svg": "/react-gh-pages/static/media/circle.ccaaaf80c28c32ebdcbb4408c3886c84.svg",
     "index.html": "/react-gh-pages/index.html",
-    "static/media/playIcon.svg": "/react-gh-pages/static/media/playIcon.88c90b856b47a35052546206b5822228.svg",
-    "main.770c2734.css.map": "/react-gh-pages/static/css/main.770c2734.css.map",
-    "main.a64961b7.js.map": "/react-gh-pages/static/js/main.a64961b7.js.map",
+    "static/media/cube.svg": "/react-gh-pages/static/media/cube.925249d3a5a18a11ee4245c9852dc5b0.svg",
+    "static/media/playIcon.svg": "/react-gh-pages/static/media/playIcon.de9fb83e5ebbeadb680eee5efc5127fd.svg",
+    "main.d195ebcb.css.map": "/react-gh-pages/static/css/main.d195ebcb.css.map",
+    "main.1eef0206.js.map": "/react-gh-pages/static/js/main.1eef0206.js.map",
     "787.8de91599.chunk.js.map": "/react-gh-pages/static/js/787.8de91599.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.770c2734.css",
-    "static/js/main.a64961b7.js"
+    "static/css/main.d195ebcb.css",
+    "static/js/main.1eef0206.js"
   ]
 }
