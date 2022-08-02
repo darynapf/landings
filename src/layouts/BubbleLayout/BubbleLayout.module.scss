@@ -37,10 +37,11 @@
     padding: 50px;
     gap: 40px;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   @media screen and (max-width: 568px) {
-    padding: 10px;
+    padding: 20px;
   }
 }
 
@@ -50,6 +51,7 @@
   position: relative;
   gap: 40px;
   font-family: "Open Sans", sans-serif;
+  width: 100%;
 
   @supports not (gap: 40px) {
     & > *:not(:last-child) {
@@ -65,6 +67,17 @@
     color: rgb(var(--bubble-accent));
     max-width: 466px;
     text-transform: capitalize;
+
+    @media screen and (max-width: 568px) {
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: 400;
+    }
+
+    @media screen and (max-width: 768px) {
+      backdrop-filter: blur(20px);
+      max-width: 100%;
+    }
   }
 
   &__buttons {
@@ -86,6 +99,11 @@
     left: 25%;
     top: -5%;
     animation: move infinite alternate 5s;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+      animation: none;
+    }
   }
 
   .content__text {

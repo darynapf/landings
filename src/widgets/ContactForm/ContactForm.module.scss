@@ -47,6 +47,10 @@
     gap: 20px;
     min-width: 250px;
 
+    @media screen and (max-width: 768px) {
+      min-width: 100%;
+    }
+
     @supports not (gap: 20px) {
       & > *:not(:last-child) {
         margin-bottom: 20px;
