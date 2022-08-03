@@ -14,7 +14,7 @@ const NightLayout = (props) => {
             design
           </div>
           <div className={styles.content__buttons}>
-            <Link to="/">
+            <Link to="/landings">
               <PlayButton
                 onClick={props.playButton}
                 name="Check how it works"
