@@ -33,6 +33,10 @@
     .playButton__box {
       border-radius: 0.5em 0 0.5em 0;
     }
+
+    .playButton__text_night {
+      color: rgb(var(--black));
+    }
   }
 
   &:active {
@@ -55,6 +59,14 @@
     max-width: 75px;
     color: rgb(var(--black));
     transition: color 0.2s;
+
+    &_night {
+      color: rgb(var(--white));
+    }
+
+    &_bubble {
+      color: rgb(var(--black));
+    }
   }
 
   &__icon {
