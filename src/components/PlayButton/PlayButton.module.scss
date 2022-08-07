@@ -58,8 +58,7 @@
     text-align: left;
     max-width: 75px;
     color: rgb(var(--black));
-    transition: color 0.2s;
-    transition: color 0.25s;
+    transition: color 1s;
 
     &_night {
       color: rgb(var(--white));
