@@ -6,11 +6,11 @@ import { ContactForm } from "../../widgets/ContactForm";
 import { ReactComponent as Grid } from "../../assets/svg/grid.svg";
 import { clsx } from "clsx";
 
-const MainScreen = (props) => {
+const MainScreen = () => {
   const [theme, setTheme] = useState("bubble");
 
   const changeTheme = () => {
-    setTheme("night");
+    return theme === "bubble" ? setTheme("night") : setTheme("bubble");
   };
 
   return (

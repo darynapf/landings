@@ -1,5 +1,5 @@
 import React from "react";
-import { MainScreen } from "../layouts/MainScreen";
+import { MainScreen } from "../screens/MainScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<MainScreen />} />
+          <Route path="/landings" element={<MainScreen />} />
         </Routes>
       </Router>
     </div>

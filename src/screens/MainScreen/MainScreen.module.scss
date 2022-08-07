@@ -5,7 +5,15 @@
   height: 100%;
   padding: 5% 0;
   min-height: 100vh;
-  background-color: rgb(var(--bubble-secondary));
+
+  &_bubble {
+    background-color: rgb(var(--bubble-secondary));
+  }
+
+  &_night {
+    background: center / cover no-repeat
+      url("../../assets/videos/background.gif");
+  }
 
   &::before {
     position: absolute;
@@ -61,12 +69,22 @@
 
   &__title {
     z-index: 100;
-    font-weight: 300;
     font-size: 48px;
     line-height: 65px;
-    color: rgb(var(--bubble-accent));
     max-width: 466px;
     text-transform: capitalize;
+    transition: color 0.25s;
+    font-weight: 300;
+
+    &_night {
+      font-family: "Gloria Hallelujah", cursive;
+      color: rgb(var(--white));
+    }
+
+    &_bubble {
+      font-family: "Open Sans";
+      color: rgb(var(--bubble-accent));
+    }
 
     @media screen and (max-width: 568px) {
       font-size: 32px;
