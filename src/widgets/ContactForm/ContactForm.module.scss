@@ -23,7 +23,7 @@
     padding: 40px 30px;
     gap: 30px;
     z-index: 100;
-    transition: background 0.25s;
+    transition: background 1s;
 
     &_night {
       background: rgb(var(--white) / 0.1);
@@ -46,7 +46,7 @@
     font-size: 20px;
     line-height: 27px;
     text-align: center;
-    transition: color 0.25s;
+    transition: color 1s;
 
     &_night {
       text-transform: uppercase;
@@ -81,7 +81,7 @@
     font-size: 10px;
     line-height: 14px;
     max-width: 250px;
-    transition: color 0.25s;
+    transition: color 1s;
 
     &_night {
       color: rgb(var(--white));

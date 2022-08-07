@@ -10,8 +10,9 @@ const ContactForm = (props) => {
     { type: "tel", placeholder: "Enter your phone", title: "your phone" },
   ];
 
-  const inputList = contactsInfo.map((e) => (
+  const inputList = contactsInfo.map((e, k) => (
     <BaseInput
+      key={k}
       type={e.type}
       placeholder={e.placeholder}
       title={e.title}

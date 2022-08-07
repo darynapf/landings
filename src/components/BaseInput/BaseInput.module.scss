@@ -15,6 +15,7 @@
     font-size: 12px;
     line-height: 16px;
     text-transform: capitalize;
+    transition: color 1s;
 
     &_bubble {
       color: rgb(var(--bubble-grey));
@@ -31,7 +32,7 @@
     width: 100%;
     border-radius: 5px;
     text-transform: capitalize;
-    transition: background 0.2s, border 0.2s;
+    transition: background 0.5s, outline 0.5s, color 1s;
     color: rgb(var(--bubble-grey));
 
     &_bubble {
