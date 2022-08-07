@@ -11,35 +11,59 @@
   }
 
   &__title {
-    color: rgb(var(--bubble-grey));
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     text-transform: capitalize;
+
+    &_bubble {
+      color: rgb(var(--bubble-grey));
+    }
+
+    &_night {
+      color: rgb(var(--white));
+    }
   }
 
   &__control {
     min-height: 40px;
     padding: 10px 15px;
     width: 100%;
-    border: 1px solid rgb(var(--bubble-light-grey));
     border-radius: 5px;
     text-transform: capitalize;
-    background: rgb(var(--white));
     transition: background 0.2s, border 0.2s;
+    color: rgb(var(--bubble-grey));
 
-    &:hover {
-      background: rgb(var(--bubble-light-grey));
+    &_bubble {
+      background: rgb(var(--white));
+      outline: 1px solid rgb(var(--bubble-light-grey));
+
+      &:hover {
+        color: rgb(var(--black) / 0.1);
+        background: rgb(var(--bubble-light-grey));
+        outline: 1px solid rgb(var(--bubble-primary));
+      }
     }
 
-    &:focus {
-      border: 1px solid rgb(var(--bubble-primary));
-      background: rgb(var(--white));
+    &_night {
+      background: rgb(var(--black) / 0.1);
+      outline: 1px solid rgb(var(--bubble-light-grey) / 0.2);
+
+      &:hover {
+        background: rgb(var(--black) / 0.3);
+      }
     }
 
     &::placeholder {
       font-weight: 400;
       font-size: 14px;
+      color: rgb(var(--night-light-grey));
+    }
+
+    &:focus {
+      outline: 1px solid rgb(var(--bubble-primary));
+      background: rgb(var(--white));
+      color: rgb(var(--bubble-grey));
     }
   }
 }

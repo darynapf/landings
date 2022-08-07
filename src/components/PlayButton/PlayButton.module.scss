@@ -59,6 +59,7 @@
     max-width: 75px;
     color: rgb(var(--black));
     transition: color 0.2s;
+    transition: color 0.25s;
 
     &_night {
       color: rgb(var(--white));

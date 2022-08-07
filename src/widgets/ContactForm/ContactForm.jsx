@@ -1,6 +1,7 @@
 import { BaseInput } from "../../components/BaseInput/BaseInput";
 import { BaseButton } from "../../components/BaseButton/BaseButton";
 import styles from "./ContactForm.module.scss";
+import { clsx } from "clsx";
 
 const ContactForm = (props) => {
   const contactsInfo = [
@@ -15,6 +16,7 @@ const ContactForm = (props) => {
       placeholder={e.placeholder}
       title={e.title}
       value={props.value}
+      theme={props.theme}
     />
   ));
 
@@ -24,14 +26,31 @@ const ContactForm = (props) => {
       method="POST"
       className={styles.form}
     >
-      <div className={styles.form__container}>
-        <div className={styles.form__title}>{props.title}</div>
+      <div
+        className={clsx(
+          styles.form__container,
+          styles[`form__container_${props.theme}`]
+        )}
+      >
+        <div
+          className={clsx(
+            styles.form__title,
+            styles[`form__title_${props.theme}`]
+          )}
+        >
+          {props.title}
+        </div>
         <div className={styles.form__inputs}>{inputList}</div>
-        <div className={styles.form__agreement}>
+        <div
+          className={clsx(
+            styles.form__agreement,
+            styles[`form__agreement_${props.theme}`]
+          )}
+        >
           By clicking the button you are accepting the terms of the main
           agreement
         </div>
-        <BaseButton name="send" type="submit" />
+        <BaseButton name="send" type="submit" theme={props.theme} />
       </div>
     </form>
   );

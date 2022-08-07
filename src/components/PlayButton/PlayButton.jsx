@@ -3,7 +3,6 @@ import { clsx } from "clsx";
 import { ReactComponent as PlayButtonIcon } from "../../assets/svg/playIcon.svg";
 
 const PlayButton = (props) => {
-  const { theme } = props;
   return (
     <button className={styles.playButton} onClick={props.onClick}>
       <div className={styles.playButton__box}>
@@ -12,7 +11,7 @@ const PlayButton = (props) => {
       <span
         className={clsx(
           styles.playButton__text,
-          styles[`playButton__text_${theme}`]
+          styles[`playButton__text_${props.theme}`]
         )}
       >
         {props.name}

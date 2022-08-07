@@ -5,6 +5,8 @@ import { PlayButton } from "../../components/PlayButton";
 import { ContactForm } from "../../widgets/ContactForm";
 
 const NightLayout = (props) => {
+  const theme = "night";
+
   return (
     <div className={styles.background}>
       <div className={styles.background__bg}></div>
@@ -19,13 +21,13 @@ const NightLayout = (props) => {
               <PlayButton
                 onClick={props.playButton}
                 name="Check how it works"
-                theme="night"
+                theme={theme}
               />
             </Link>
           </div>
         </div>
         <div className={styles.form}>
-          <ContactForm title="Contact information" />
+          <ContactForm title="Contact information" theme={theme} />
         </div>
       </div>
     </div>

@@ -7,6 +7,8 @@ import { ContactForm } from "../../widgets/ContactForm";
 import { ReactComponent as Grid } from "../../assets/svg/grid.svg";
 
 const BubbleLayout = (props) => {
+  const theme = "bubble";
+
   return (
     <div className={styles.background}>
       <div className={styles.container}>
@@ -21,12 +23,13 @@ const BubbleLayout = (props) => {
               <PlayButton
                 onClick={props.playButton}
                 name="Check how it works"
+                theme={theme}
               />
             </Link>
           </div>
         </div>
         <div className={styles.form}>
-          <ContactForm title="Contact information" />
+          <ContactForm title="Contact information" theme={theme} />
         </div>
       </div>
       <DecorateElements />
