@@ -5,6 +5,7 @@ import { DecorateElements } from "../../components/DecorateElements";
 import { ContactForm } from "../../widgets/ContactForm";
 import { ReactComponent as Grid } from "../../assets/svg/grid.svg";
 import { clsx } from "clsx";
+import video from "../../assets/videos/video.mp4";
 
 const MainScreen = () => {
   const [theme, setTheme] = useState("bubble");
@@ -15,6 +16,15 @@ const MainScreen = () => {
 
   return (
     <div className={clsx(styles.background, styles[`background_${theme}`])}>
+      {theme === "night" && (
+        <video
+          src={video}
+          className={styles.video}
+          muted="true"
+          autoplay="true"
+          loop="true"
+        />
+      )}
       <div className={styles.container}>
         <div className={styles.content}>
           <div
