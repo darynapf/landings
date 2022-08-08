@@ -55,7 +55,7 @@
   }
 }
 
-@-webkit-keyframes ripple {
+@keyframes ripple {
   to {
     transform: translate(-50%, -50%) scale(1);
   }

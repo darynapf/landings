@@ -11,6 +11,12 @@
   background: none;
   transition: transform 0.2s;
 
+  @supports not (gap: 30px) {
+    & > *:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
   &::before {
     position: absolute;
     left: 0;
