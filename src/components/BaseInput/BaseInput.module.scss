@@ -1,13 +1,10 @@
 .input {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 100%;
 
-  @supports not (gap: 10px) {
-    & > *:not(:last-child) {
-      margin-bottom: 10px;
-    }
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   &__title {
