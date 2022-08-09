@@ -4,7 +4,10 @@ import { ReactComponent as PlayButtonIcon } from "../../assets/svg/playIcon.svg"
 
 const PlayButton = (props) => {
   return (
-    <button className={styles.playButton} onClick={props.onClick}>
+    <button
+      className={clsx(styles.playButton, styles[`playButton_${props.theme}`])}
+      onClick={props.onClick}
+    >
       <div className={styles.playButton__box}>
         <PlayButtonIcon className={styles.playButton__icon} />
       </div>

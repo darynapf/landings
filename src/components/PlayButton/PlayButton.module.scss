@@ -14,6 +14,24 @@
     margin-right: 30px;
   }
 
+  &_bubble {
+    &::before {
+      content: "";
+      background: rgb(var(--white));
+    }
+  }
+
+  &_night {
+    &::before {
+      content: "";
+      background: rgb(var(--white) / 0.1);
+    }
+
+    .playButton__icon {
+      fill: rgb(var(--white));
+    }
+  }
+
   &::before {
     position: absolute;
     left: 0;
@@ -23,7 +41,6 @@
     content: "";
     border-radius: 0.5em;
     z-index: 1;
-    background: rgb(var(--white));
     transition: width 0.4s;
   }
 
@@ -35,10 +52,6 @@
 
     .playButton__box {
       border-radius: 0.5em 0 0.5em 0;
-    }
-
-    .playButton__text_night {
-      color: rgb(var(--black));
     }
   }
 
